@@ -1,0 +1,294 @@
+body { /* Styles the whole page */
+  display: flex;
+  flex-direction: column;
+  line-height: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  background-color: #c9c9c9;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+
+}
+
+
+/* Reference: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_menu
+*/
+/* Reference */
+.navbar {             /*styles navbar*/
+  overflow:hidden;
+  float: left;
+  background-color: #FFF;
+  position: fixed;
+  top: 0;
+  width: 100%;  
+}
+
+.navbar a {         /*styles navbar*/
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.youtubeVideo
+{
+  margin-top: 7%;
+}
+/* Reference */
+
+nav ul {
+  margin: 0 0 0 -30px; /* positions nav bar correctly*/
+  list-style: none;
+  
+}
+
+li a:hover { /*styles hover element*/
+  color:grey;
+  
+}
+
+h5 {
+  font-size: 12px;
+}
+
+
+
+.footer { /* styles the footer class/container*/
+  padding: 1em;
+  background: #333;
+  text-align: center;
+  height:28px;
+/*  position:absolute;*/
+/*  top:1000px;*/
+/*  left: 0;*/
+/*  bottom: 100%;*/
+  width: 96.6%;
+
+  
+  /*https://css-tricks.com/snippets/css/fixed-footer/ */
+}
+
+.wrapper {  /*wraps main and aside*/
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  height: 600px;
+  
+  
+}
+
+.wrapper bottom {
+  
+  width:50%;
+}
+
+.top_class {    /*styles top class*/
+  order: -1;
+  margin-top:45px;
+  width: 100%;
+  height: 400px;
+  font-family: 'Quicksand', sans-serif;
+
+  
+}
+
+.myImage {
+  background-image: url("images/sunsetnew.jpg");
+  height: 100%;
+  width:100%;
+  
+}
+
+.myImage {
+  background-image: url("images/IMG1026.jpg");
+  position: absolute; 
+  
+}
+
+
+
+.main {
+  padding: 0.5em;
+  background-color: #c9c9c9;
+  border-width: medium;
+  width: 50%;
+  text-align: center;
+  height: 100%;
+}
+
+.aside {
+  padding: 0.5em;
+  background: #c9c9c9;
+  text-align: center;
+  border-width: medium;
+  width: 50%;
+}
+
+
+.bottom
+{
+  padding-bottom:0.5em;
+  background: #c9c9c9;
+  text-align: center;
+  border-width: medium;
+  width: 100%;
+  height: auto;
+  
+}
+
+
+
+
+
+ 
+
+@media only screen and (max-width: 320px) {     /*media query for nav bar itself mobile sized */
+  .navbar {
+    flex: 0 1 auto; 
+    width: 320px;
+    height: 25px;
+    
+  } 
+
+}
+
+@media only screen and (max-width: 320px) {    /*media query for text in nav bar mobile sized */
+  
+  .navbar ul li a {
+    
+    font-size: 6pt;
+    padding: 2px;
+
+    
+  }
+}
+
+
+
+@media only screen and (max-width 320px) {   /*Media query for sunset pic mobile sized / not working */
+  
+  
+  .top_class {
+      width: 10%; !important
+    
+    
+    
+    
+  }
+}
+
+
+
+
+/*
+
+@media only screen and (max-width: 800px) {    media query for nav bar tablet sized - messes up structure of screen for computer sized
+  .navbar {
+    flex: 0 1 auto;
+  }
+*/
+  
+  
+  
+  
+  
+ 
+@media (max-width: 800px) {
+  .aside {
+   flex: 0 1 auto;
+    
+  } 
+  
+}
+
+@media (max-width: 1200px) {
+  .main {
+    flex: 0 1 auto;
+
+  }  
+}
+
+/* --------------- */
+/* https://codepen.io/ACaldy/pen/KgVRKL */ 
+@media only screen and (max-width: 320px) {
+  footer 
+  {
+        width:100%;
+        margin:0 auto;
+  }
+}
+
+.bottom-bar 
+{
+  position:fixed;
+  text-align:center;
+  font-size:0.8em;
+  text-transform:uppercase;
+  background:#b5b5b5;
+  padding:15.6px 0;
+  bottom: 0;
+  width: 100%;
+  color:#fff; 
+  
+}
+
+
+
+
+
+
+
+/* ---------------- */ 
+
+
+
+
+  
+
+.wrapper {
+  flex-direction: row;
+
+}
+
+.main {
+  width: 50%;
+  flex: 1 1 auto;
+}
+
+
+
+/* round images not the header though border-radius: 50%;*/
+
+img {
+  opacity: 0.6;
+  
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+/*https://www.w3schools.com/css/css3_images.asp // centre's my image*/
+}
+
+table
+{
+  border-collapse: collapse;
+  width: 500px;
+}
+
+table, td,th {
+  border: 1px solid black;
+  font-size: 12px;
+}
+
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
